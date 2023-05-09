@@ -1,0 +1,26 @@
+.main {
+    max-width: 800px;
+    margin: auto;
+    padding: 1rem;
+  }
+  
+  .item {
+    display: none;
+    height: 100%;
+    padding: 1rem;
+  }
+  
+  .item.active {
+    display: block;
+  }
+    
+  
+  .recipe-img {
+    width: 500px;
+    height: 300px;
+    display:block; 
+    margin:0 auto;
+
+  }
+
+  
