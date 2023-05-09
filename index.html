@@ -1,0 +1,113 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Caderno de Receitas</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link href="/style.css" rel="stylesheet">
+    <script src="paginar.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-8">
+                <div class="card">
+                    <div class="card-header">
+                        <h1 class="text-center">Caderno de Receitas</h1>
+                    </div>
+                    <div class="card-body d-flex justify-content-center align-items-center">
+                        <div class="main">
+                            
+                            <div class="item active" id="pag1">
+                                <img class="recipe-img" img src="/Users/Anderson/OneDrive/Imagens/bolo-de-cenoura.jpg" alt="Bolo de Cenoura">
+                                <h2>Receita de Bolo de Cenoura</h2>
+                                <ul>
+                                    <li>3 cenouras médias raspadas e picadas</li>
+                                    <li>4 ovos</li>
+                                    <li>1 xícara de óleo</li>
+                                    <li>2 xícaras de açúcar</li>
+                                    <li>2 xícaras de farinha de trigo</li>
+                                    <li>1 colher (sopa) de fermento em pó</li>
+                                </ul>
+                            
+                                <h3>Modo de preparo</h3>
+                                <ol>
+                                    <li>Pré-aqueça o forno a 180°C.</li>
+                                    <li>No liquidificador, bata as cenouras, os ovos e o óleo até obter uma mistura homogênea.</li>
+                                    <li>Em uma tigela, misture o açúcar e a farinha de trigo. Adicione a mistura do liquidificador e misture bem.</li>
+                                    <li>Adicione o fermento em pó e misture delicadamente.</li>
+                                    <li>Despeje a massa em uma forma untada e enfarinhada.</li>
+                                    <li>Leve ao forno por cerca de 35-40 minutos, ou até que um palito inserido no centro do bolo saia limpo.</li>
+                                    <li>Retire do forno e deixe esfriar antes de servir.</li>
+                                </ol>
+                            </div> 
+
+
+                          
+                            <div id="pag2" class="item">
+                                <img class="recipe-img" src="/Users/Anderson/OneDrive/Imagens/lasanha.jpg" alt="lasanha">
+                                <h2>Receita de Lasanha</h2>
+                                <ul>
+                                    <li>500 g de massa de lasanha</li>
+                                    <li>500g de carne moída</li>
+                                    <li>2 caixas de creme de leite</li>
+                                    <li>3 colheres de manteiga</li>
+                                    <li>3 colheres de farinha de trigo</li>
+                                    <li>500 g de presunto</li>
+                                    <li>500 g de mussarela</li>
+                                    <li>Sal e pimenta-do-reino a gosto</li>
+                                    <li>2 copos de leite</li>
+                                    <li>1 cebola picada/ralada</li>
+                                    <li>3 colheres de óleo</li>
+                                    <li>1 caixa de molho de tomate</li>
+                                    <li>3 dentes de alho amassado</li>
+                                    <li>1 pacote de queijo ralado</li>
+                                </ul>
+                                <h3>Modo de preparo</h3>
+                                <ol>
+                                    <li>Cozinhe a massa segundo as orientações do fabricante, despeje em um refratário com água gelada para não grudar e reserve.</li>
+                                    <li>Refogue o alho, a cebola, a carne moída, o molho de tomate, deixe cozinhar por 3 minutos e reserve.</li>
+                                    <li>Derreta a margarina, coloque as 3 colheres de farinha de trigo e mexa.</li>
+                                    <li>Despeje uma parte do molho à bolonhesa em um refratário, a metade da massa, a metade do presunto, a metade da mussarela, todo o molho branco e o restante da massa.</li>
+                                    <li>Repita as camadas até a borda do recipiente.</li>
+                                    <li>Finalize com o queijo ralado e leve ao forno alto (220° C), preaquecido, por cerca de 20 minutos.</li>
+                                </ol>
+                            </div>
+
+
+                            <div id="pag3" class="item">
+                                <img class="recipe-img" src="/Users/Anderson/OneDrive/Imagens/brigadeiro.jpg" alt="Brigadeiro">
+                                <h2>Receita de Brigadeiro</h2>
+                                <ul>
+                                    <li>1 lata de leite condensado</li>
+                                    <li>4 colheres (sopa) de achocolatado em pó</li>
+                                    <li>1 colher (sopa) de manteiga</li>
+                                    <li>Granulado para decorar</li>
+                                </ul>
+
+                                <h3>Modo de preparo</h3>
+                                <ol>
+                                    <li>Em uma panela, adicione o leite condensado, o achocolatado em pó e a manteiga.</li>
+                                    <li>Leve ao fogo baixo e mexa sem parar até obter uma mistura homogênea e que comece a soltar do fundo da panela (cerca de 10-15 minutos).</li>
+                                    <li>Desligue o fogo e deixe esfriar um pouco antes de moldar as bolinhas de brigadeiro.</li>
+                                    <li>Com as mãos levemente untadas com manteiga, pegue pequenas porções da mistura e molde bolinhas.</li>
+                                    <li>Passe as bolinhas de brigadeiro no granulado e coloque em forminhas de papel.</li>
+                                    <li>Leve à geladeira por cerca de 30 minutos antes de servir.</li>
+                                </ol>
+                            </div>  
+                        </div>
+                    </div>
+                </div>
+             
+                <ul class="pagination">
+                    <li class="page-item active"><a class="page-link" href="#pag1" onclick="paginar('pag1')">1</a></li>
+                    <li class="page-item"><a class="page-link" href="#pag2" onclick="paginar('pag2')">2</a></li>
+                    <li class="page-item"><a class="page-link" href="#pag3" onclick="paginar('pag3')">3</a></li>
+                </ul>   
+            </div>  
+        </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
